@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vasoco.jacquesmartinvaso.DPLevelCalculator.OpenTank_Capillary_Zero_Elevation"
+    tools:showIn="@layout/activity_ot_impulse__wet__leg"
+    android:isScrollContainer="@+id/nestedscrollview"
+    android:background="@color/secondaryLightColor"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/content_layout">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/content_padding"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:focusable="true">
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <android.support.design.widget.TextInputLayout
+                               android:id="@+id/heightmax_textInputLayout"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               app:hintTextAppearance="@style/TextAppearance.AppCompat.Small">
+
+                               <EditText
+                                   android:id="@+id/height_max_edittext"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:hint="@string/lmax_string"
+                                   android:inputType="numberDecimal"
+                                   android:drawableLeft="@drawable/ic_lmax"
+                                   android:drawablePadding="@dimen/content_padding"
+                                   android:imeOptions="flagNoExtractUi"
+                                   android:drawableStart="@drawable/ic_lmax" />
+
+                           </android.support.design.widget.TextInputLayout>
+
+
+                           <android.support.design.widget.TextInputLayout
+                               android:id="@+id/heightmin_textInputLayout"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@+id/heightmax_textInputLayout"
+                               >
+
+                               <EditText
+                                   android:id="@+id/height_min_edittext"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:hint="@string/lmin_string"
+                                   android:drawableLeft="@drawable/ic_lmin"
+                                   android:drawablePadding="@dimen/content_padding"
+                                   android:inputType="numberDecimal"
+                                   android:imeOptions="flagNoExtractUi"
+                                   android:drawableStart="@drawable/ic_lmin" />
+
+                           </android.support.design.widget.TextInputLayout>
+
+                           <android.support.design.widget.TextInputLayout
+                               android:id="@+id/distanceTx_zeroSuppression_textInputLayout"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@+id/heightmin_textInputLayout"
+                               >
+
+                               <EditText
+                                   android:id="@+id/href_edittext"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:hint="@string/dtx_string"
+                                   android:drawableLeft="@drawable/ic_distancetx"
+                                   android:drawablePadding="@dimen/content_padding"
+                                   android:inputType="numberDecimal"
+                                   android:imeOptions="flagNoExtractUi"
+                                   android:drawableStart="@drawable/ic_distancetx" />
+
+                           </android.support.design.widget.TextInputLayout>
+
+
+
+                           <android.support.design.widget.TextInputLayout
+                               android:id="@+id/ssg_process_textInputLayout"
+                               android:layout_below="@+id/distanceTx_zeroSuppression_textInputLayout"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content">
+
+                               <EditText
+                                   android:id="@+id/sg_proces_edittext"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:hint="@string/SG_Process"
+                                   android:drawableLeft="@drawable/ic_sgprocess"
+                                   android:drawablePadding="@dimen/content_padding"
+                                   android:inputType="numberDecimal"
+                                   android:imeOptions="flagNoExtractUi"
+                                   android:drawableStart="@drawable/ic_sgprocess" />
+
+
+                           </android.support.design.widget.TextInputLayout>
+
+                           <android.support.design.widget.TextInputLayout
+                               android:id="@+id/sg_fill_textInputLayout"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@+id/ssg_process_textInputLayout"
+                               >
+
+                               <android.support.design.widget.TextInputEditText
+                                   android:id="@+id/sg_fill_edittext"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:hint="@string/sg_of_fill_fluid"
+                                   android:drawableLeft="@drawable/ic_sgfill"
+                                   android:drawableStart="@drawable/ic_sgfill"
+                                   android:drawablePadding="@dimen/content_padding"
+                                   android:inputType="numberDecimal"
+                                   android:imeOptions="flagNoExtractUi"/>
+
+                           </android.support.design.widget.TextInputLayout>
+
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="25dp"
+                               android:layout_below="@+id/sg_fill_textInputLayout"
+                               android:id="@+id/view_to_anchor_pressure_spinner"
+                               android:layout_marginBottom="8dp"/>
+
+                           <TextView
+                               android:layout_marginTop="20dp"
+                               android:id="@+id/lrv_textview"
+                               android:layout_width="200dp"
+                               android:layout_height="30dp"
+                               android:textSize="@dimen/textview_textsize"
+                               android:drawableLeft="@drawable/ic_lrv"
+                               android:drawableStart="@drawable/ic_lrv"
+                               android:background="#607d8b"
+                               android:textColor="#ffffff"
+                               android:gravity="center_vertical"
+                               android:layout_below="@+id/view_to_anchor_pressure_spinner"
+                               android:drawablePadding="@dimen/texview_icpadding"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:layout_marginBottom="4dp"
+                               />
+                           <TextView
+                               android:id="@+id/urv_textview"
+                               android:layout_width="200dp"
+                               android:layout_height="30dp"
+                               android:textSize="@dimen/textview_textsize"
+                               android:background="#607d8b"
+                               android:textColor="#ffffff"
+                               android:gravity="center_vertical"
+                               android:drawablePadding="@dimen/texview_icpadding"
+                               android:drawableLeft="@drawable/ic_urv"
+                               android:drawableStart="@drawable/ic_urv"
+                               android:layout_below="@+id/lrv_textview"
+                               android:clickable="true"
+                               android:focusable="true"
+                               />
+
+
+
+
+                           <Button
+                               android:id="@+id/showtable_button"
+                               android:layout_width="45dp"
+                               android:layout_height="40dp"
+                               style="@style/Base.Widget.AppCompat.Button.Borderless"
+                               android:background="@drawable/ic_showtable"
+                               android:layout_below="@+id/sg_fill_textInputLayout"
+                               android:layout_alignParentStart="true"
+                               android:layout_alignParentLeft="true" />
+
+
+
+
+                       </RelativeLayout>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_measurement_units"
+            app:layout_anchor="@+id/height_max_edittext"
+            app:layout_anchorGravity="right|center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_pressure_units"
+            app:layout_anchor="@+id/view_to_anchor_pressure_spinner"
+            app:layout_anchorGravity="end|center"
+            />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

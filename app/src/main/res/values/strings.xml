@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">DPLevel Calculator</string>
+    <string name="action_settings">Feedback</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+
+    <string-array name="measurement_units">
+
+        <item>in</item>
+        <item>mm</item>
+        <item>cm</item>
+        <item>ft</item>
+        <item>m</item>
+
+    </string-array>
+
+
+    <string-array name="pressure_units">
+
+        <item>mbar</item>
+        <item>mmH20</item>
+        <item>psi</item>
+        <item>MPa</item>
+        <item>kPa</item>
+        <item>bar</item>
+        <item>inH20</item>
+        <item>kg/cm2</item>
+
+    </string-array>
+
+
+
+    <string-array name="SG_Fill_Fluids">
+        <item>Silicone 200</item>
+        <item>Silicone 704</item>
+        <item>Silicone 705</item>
+        <item>Syltherm XLT</item>
+        <item>Inert Halocarbon</item>
+        <item>Neobee</item>
+        <item>Glycerin and Water</item>
+        <item>Propylene Glycol and Water</item>
+    </string-array>
+
+    <string name="ot_impulse_wet_leg_description">
+
+        This type of open tank level measurement,measures the level of the process
+        directly proportional to its hydrostatic pressure(Specific Gravity of the Process multiplied by its height).This is cost effective and commonly utilized in
+        boiler feed water tank.
+
+        The measurement formula used in this app is based on Differential Pressure type Transmitter calculation(Differential Pressure = Hp - Lp).
+        It is important to take note that the reference for  measurement is the HP tapping point of the Transmitter on the tank.
+        The LP port of the DP transmitter is vented to air.
+
+
+    </string>
+    <string name="ot_capillary_zero_elevation_description" >
+
+        If the transmitter location is slightly above the HP tapping point,then this is called Zero Elevation.As a result the
+        registered pressure reading at 0% Level or 4Ma will be negative.Still the HP tapping point on the tank is the reference for measurement.
+
+    </string>
+
+    <string name="ot_capillary_zero_suppression_description" >
+
+        If the transmitter location is slightly below the HP tapping point,then this is called Zero Suppression.
+        The HP tapping point on the tank is the reference for measurement.LP port of the DP transmitter is vented to air for open tank
+        configuration.
+
+    </string>
+
+    <string name="ot_bubbler_system_description" >
+
+        Bubbler system uses constant supply of air to exit on the tip of the tube creating bubbles.If the level is at full it is
+        harder for the bubbles to exit ,because of the hydrostatic pressure, and thus registering a higher pressure than when the tank is at low level.
+        The tip of the tube submerged on the process is the reference point for measurement.
+
+
+    </string>
+
+    <string name="ct_capillary_twoseal_description" >
+        One of the most common and less maintenance type of level measurement.This is used on a pressurized tank wherein the tap to tap
+        distance is the reference for pressure reading.The location of the transmitter in this case does not affect the reading.
+
+
+
+    </string>
+
+    <string name="ct_impulse_wetleg_description" >
+
+        Wet Leg implies that the LP impulse leg(or Reference Leg) is constantly filled with a medium at fixed level.This in turn becomes
+        the reference pressure of the transmitter.This is the most common type of level measurement we can find in the industry.
+        The reference point for measurement is the HP tapping point on the tank.
+
+    </string>
+
+    <string name="ct_impulse_dryleg_description" >
+
+        This type of level measurement utilizes an empty impulse leg connectec with the LP port of the transmitter.This is used on pressurized tank
+        but poses a problem with technicians to constantly drain the LP leg since condensation due to differing temperature at its leg
+        will cause inaccurate reading.The reference point for measurement is the HP tapping point on the tank.
+
+
+    </string>
+    <string name="ct_capillary_interface_description" >
+
+        When a higher density medium is mixed with a lower density medium, the lower density float above the higher density creating
+        an interface between them. This system normally have two drain lines, one above to drain the upper medium(overflow line)
+        and one at the bottom to drain the higher density medium.This setting ensures that the tank will have constant level at all times with
+        a mixture of both differing densities.The goal of this system is separation of two medium and that system will ensure that the higher density medium
+        will not flow out to the overflow.The level being measured by the DP transmitter is of the one medium only(normally the higher density) and DCS will translate the level of the other medium.
+        This calculation needs distance from the overflow to the maximum level the system should satisfy.
+
+    </string>
+
+
+    <string name="Silicone_200">0.93</string>
+    <string name="Silicone_704">1.07</string>
+    <string name="Silicone_705">1.09</string>
+    <string name="Sytherm_XLT">0.85</string>
+    <string name="Inert_Halocarbon">1.85</string>
+    <string name="Neobee_M_20">0.94</string>
+    <string name="Glycerin_and_water">1.13</string>
+    <string name="Propylen_Glycol_and_water">1.02</string>
+
+    <string name="lmax_string">Length at Max</string>
+    <string name="lmin_string">Length at Min</string>
+    <string name="dtx_string">Distance Tx-Tap</string>
+    <string name="SG_Process">SG Process</string>
+    <string name="Href_String">Tx-Upper Tap Distance</string>
+    <string name="sg_of_fill_fluid">SG of fill fluid</string>
+    <string name="tap_to_tap_distance">Tap to Tap Distance</string>
+    <string name="sg_of_the_lower_process">SG of the lower process</string>
+    <string name="sg_of_the_upper_process">SG of the upper process</string>
+    <string name="open_tank_impulse_line_wet_leg">Open Tank Impulse line Wet Leg</string>
+    <string name="got_it">Got It!</string>
+    <string name="open_tank_capillary_zero_elevation">Open Tank Capillary Zero Elevation</string>
+    <string name="open_tank_capillary_zero_suppression">Open Tank Capillary Zero Suppression</string>
+    <string name="closed_tank_capillary_interface">Closed Tank Capillary Interface</string>
+    <string name="closed_tank_impulse_wet_leg">Closed Tank Impulse Wet Leg</string>
+
+
+</resources>

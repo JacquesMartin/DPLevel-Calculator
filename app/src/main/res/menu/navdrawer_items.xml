@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Open Tank">
+        <menu>
+            <item
+                android:id="@+id/opentTankimpulse_wetleg_single"
+                android:title="Impulse Single Wet-Leg"/>
+            <item
+                android:id="@+id/opentTankCapp_Single_seal_below_tap"
+                android:title="Capillary Zero Suppression" />
+            <item
+                android:id="@+id/openTankCapp_singleSeal_above_tap"
+                android:title="Capillary Zero Elevation" />
+            <item
+                android:id="@+id/openTank_bubbler_system"
+                android:title="Bubbler System"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Closed Tank">
+        <menu>
+            <item
+                android:id="@+id/closedTankCapp_two_seal_system"
+                android:title="Capillary Two Seal System" />
+            <item
+                android:id="@+id/closedTankImpulse_wet_leg"
+                android:title="Impulse Wet Leg" />
+            <item
+                android:id="@+id/closedTankImpulse_dry_leg"
+                android:title="Impulse Dry Leg"/>
+            <item
+                android:id="@+id/closedTankcapillary_interface"
+                android:title="Capillary Interface"/>
+
+        </menu>
+    </item>
+
+</menu>

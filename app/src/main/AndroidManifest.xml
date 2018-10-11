@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vasoco.jacquesmartinvaso.DPLevelCalculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.vasoco.jacquesmartinvaso.DPLevelCalculator.Impulse_Wet_Leg"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.vasoco.jacquesmartinvaso.DPLevelCalculator.OpenTank_Capillary_Zero_Suppression"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.vasoco.jacquesmartinvaso.DPLevelCalculator.OpenTank_Capillary_Zero_Elevation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.vasoco.jacquesmartinvaso.DPLevelCalculator.OpenTank_Bubbler_System"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.vasoco.jacquesmartinvaso.DPLevelCalculator.ClosedTank_Capillary_TwoSeal_System"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" /></intent-filter></activity>
+        <activity android:name="com.vasoco.jacquesmartinvaso.DPLevelCalculator.ClosedTank_Impulse_WetLeg"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.vasoco.jacquesmartinvaso.DPLevelCalculator.ClosedTank_Impulse_DryLeg"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.vasoco.jacquesmartinvaso.DPLevelCalculator.ClosedTank_Capillary_Interface"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".DisplayDialog" />
+    </application>
+
+</manifest>

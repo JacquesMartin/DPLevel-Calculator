@@ -1,0 +1,43 @@
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_dialog_table" parent="Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="hintTextAppearance" parent="TextAppearance.AppCompat.Small"/>
+    
+    
+
+    
+
+
+
+    <style name="error" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item> <!--apply the color you wat here -->
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="expandedTitleAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#ffffff</item> <!--apply the color you wat here -->
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+</resources>
