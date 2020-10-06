@@ -21,6 +21,7 @@ import android.widget.TextView;
 public class OpenTank_Bubbler_System extends BaseActivity implements AdapterView.OnItemSelectedListener {
 
 
+    
     public EditText height_Max_editText;
     public EditText height_Min_editText;
     public EditText sg_process_editText;
